@@ -69,7 +69,7 @@ getNewQuestion = () => {
   if (availableQuesions.length === 0 || questionCounter >= MAX_QUESTIONS) {
     localStorage.setItem("mostRecentScore", score);
     //go to the end page
-    return window.location.assign("/trainings.html");
+    return window.location.assign("/people-access/trainings.html");
   }
   progressText.innerText = `Question ${questionCounter}/${MAX_QUESTIONS-1}`;
   //Update the progress bar
